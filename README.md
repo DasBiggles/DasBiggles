@@ -1,8 +1,9 @@
 # Comic photo tidy-up
 
-- The original phone photos are in the repo root. They are left untouched.
-- **`aligned/`** has the tidied versions, under the same file names. Each one is 3840×2160.
-- **`previews/`** has contact sheets for comparison: `before.jpg`, `after.jpg` (with red guide lines) and `dust_before_after.jpg`.
+- **`1.jpg` … `11.jpg`** in the repo root are the chosen photos. They are left untouched.
+- **`alignednew/`** has the final tidied versions, `1.jpg` … `11.jpg`. Each one is 3326×1972.
+- `aligned/` is the earlier attempt (mat cleaned by in-painting).
+- **`previews/alignednew.jpg`** is a contact sheet of the final set.
 
 ## What is done to each photo
 1. **Find the paper.** The clear page holder covers the middle of each spread, so the page's
