@@ -21,3 +21,18 @@ pip install -r tools/requirements.txt
 python3 tools/align.py <photo folder> aligned
 ```
 Photos are processed in name order (1, 2, ... 10, 11).
+
+## Flattened pages (`flat/`)
+Scan-like images of every page, each 1553×2400. Each spread is split into
+`N-left.jpg` / `N-right.jpg`; the covers are `1.jpg` and `11.jpg`. For each page:
+- its corners and the spine are found,
+- the camera angle is undone with a perspective correction,
+- the page curl is straightened by flattening the curved top and bottom edges,
+- it is cropped to the paper.
+
+The clear clips still show where they overlap the page edges.
+`previews/flat.jpg` shows all 20 pages.
+
+```
+python3 tools/flatten.py <photo folder> flat
+```
